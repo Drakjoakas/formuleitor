@@ -14,5 +14,12 @@
         <item>Fuerza</item>
     </string-array>
 
+    <!-- HINTS FORMULARIO -->
+    <string name="hint_distancia">Distancia en Metros [m]</string>
+    <string name="hint_tiempo">Tiempo en segundos [s]</string>
+    <string name="hint_masa">Masa en Kilogramos [kg]</string>
+    <string name="hint_velocidad">Velocidad en Metros/Segundo [m/s] </string>
+    <string name="hint_aceleracion">Aceleración en Metros/Segundos^2 [m/s^2]</string>
+
 
 </resources>

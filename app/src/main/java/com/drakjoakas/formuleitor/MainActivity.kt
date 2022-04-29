@@ -1,5 +1,6 @@
 package com.drakjoakas.formuleitor
 
+import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -22,7 +23,8 @@ class MainActivity : AppCompatActivity() {
                 parent: AdapterView<*>?,
                 view: View?,
                 position: Int,
-                id: Long) {
+                id: Long)
+            {
                 Log.d("SPINNER",parent?.getItemAtPosition(position).toString())
                 Log.d("SPINNER",position.toString())
                 binding.imageView.setImageResource(getImageFormula(position))
@@ -33,17 +35,45 @@ class MainActivity : AppCompatActivity() {
             }
 
             fun getImageFormula(index: Int): Int {
-                if (index == 0) {
-                    return R.drawable.velocidad
-                } else if (index == 1) {
-                    return R.drawable.aceleracion
-                }else if (index == 2) {
-                    return R.drawable.fuerza
-                } else {
-                    return 0
+                return when (index) {
+                    0 -> {
+                        R.drawable.velocidad
+                    }
+                    1 -> {
+                        R.drawable.aceleracion
+                    }
+                    2 -> {
+                        R.drawable.fuerza
+                    }
+                    else -> {
+                        0
+                    }
                 }
 
 
+            }
+
+            fun showFields(index: Int) {
+                when (index) {
+                    0 -> {
+                        binding.distancia.visibility = View.VISIBLE
+                        binding.tiempo.visibility    = View.VISIBLE
+                        binding.velocidad.visibility = View.INVISIBLE
+                    }
+                    1 -> {
+                        binding.distancia.visibility = View.INVISIBLE
+                        binding.tiempo.visibility    = View.VISIBLE
+                        binding.velocidad.visibility = View.VISIBLE
+                    }
+                    2 -> {
+                        binding.distancia.visibility = View.INVISIBLE
+                        binding.tiempo.visibility    = View.INVISIBLE
+                        binding.velocidad.visibility = View.INVISIBLE
+                    }
+                    else -> {
+                        return
+                    }
+                }
             }
         }
     }
