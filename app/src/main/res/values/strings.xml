@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Formuleitor</string>
+
+    <!-- STRINGS DE PANTALLA DE INICIO -->
+    <string name="app_start">Formuleitor 1.0</string>
+    <string name="app_start_subtitle">by Drakjoakas (Joaquin Sandoval)</string>
+
+    <!-- STRINGS DE PANTALLA PRINCIPAL -->
+    <string name="instrucciones">Seleccione una fórmula y llene los valores.</string>
+
+    <string-array name="formulas">
+        <item>Velocidad Lineal</item>
+        <item>Aceleración</item>
+        <item>Fuerza</item>
+    </string-array>
+
+
 </resources>
