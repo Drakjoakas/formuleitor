@@ -5,15 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlin.concurrent.thread
 
-class pantalla_inicio : AppCompatActivity() {
+class MainActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_pantalla_inicio)
+        setContentView(R.layout.activity_main2)
 
         thread {
-            Thread.sleep(4000)
+            Thread.sleep(3000)
 
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this,MainActivity::class.java)
             startActivity(intent)
             finish()
         }
