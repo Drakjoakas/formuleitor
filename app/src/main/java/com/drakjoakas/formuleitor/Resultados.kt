@@ -50,6 +50,6 @@ class Resultados : AppCompatActivity() {
             }
         }
 
-        binding.resultado.text = result?.toString() ?: getString(R.string.hint_result_res)
+        binding.resultado.text = getString(R.string.result_format,result)
     }
 }

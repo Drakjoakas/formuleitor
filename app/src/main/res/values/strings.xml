@@ -48,5 +48,7 @@
     <string name="result_force_msg">La fuerza es de </string>
     <string name="result_force_units" translatable="false">[N]</string>
 
+    <string name="result_format" translatable="false">%.2f</string>
+
 
 </resources>

@@ -110,20 +110,20 @@ class MainActivity : AppCompatActivity() {
                     return false
                 }
 
-                val distancia: Int = binding.distancia.text.toString().toInt()
-                val tiempo: Int    = binding.tiempo.text.toString().toInt()
+                val distancia: Float = binding.distancia.text.toString().toFloat()
+                val tiempo: Float    = binding.tiempo.text.toString().toFloat()
 
-                if (tiempo == 0) {
+                if (tiempo == 0f) {
                     Toast.makeText(this@MainActivity,getString(R.string.error_numerator_cero),Toast.LENGTH_LONG).show()
                     return false
                 }
 
-                if (tiempo < 0) {
+                if (tiempo < 0f) {
                     Toast.makeText(this@MainActivity,getString(R.string.error_negative_time),Toast.LENGTH_LONG).show()
                     return false
                 }
 
-                if (distancia < 0) {
+                if (distancia < 0f) {
                     Toast.makeText(this@MainActivity,getString(R.string.error_negative_distance),Toast.LENGTH_LONG).show()
                     return false
                 }
@@ -146,20 +146,20 @@ class MainActivity : AppCompatActivity() {
                     return false
                 }
 
-                val velocidad: Int = binding.velocidad.text.toString().toInt()
-                val tiempo: Int    = binding.tiempo.text.toString().toInt()
+                val velocidad: Float = binding.velocidad.text.toString().toFloat()
+                val tiempo:    Float = binding.tiempo.text.toString().toFloat()
 
-                if (tiempo == 0) {
+                if (tiempo == 0f) {
                     Toast.makeText(this@MainActivity,getString(R.string.error_numerator_cero),Toast.LENGTH_LONG).show()
                     return false
                 }
 
-                if (tiempo < 0) {
+                if (tiempo < 0f) {
                     Toast.makeText(this@MainActivity,getString(R.string.error_negative_time),Toast.LENGTH_LONG).show()
                     return false
                 }
 
-                if (velocidad < 0) {
+                if (velocidad < 0f) {
                     Toast.makeText(this@MainActivity,getString(R.string.error_negative_velocity),Toast.LENGTH_LONG).show()
                     return false
                 }
@@ -180,10 +180,9 @@ class MainActivity : AppCompatActivity() {
                     return false
                 }
 
-                val masa: Int           = binding.masa.text.toString().toInt()
-                val aceleracion: Int    = binding.aceleracion.text.toString().toInt()
+                val masa: Float = binding.masa.text.toString().toFloat()
 
-                if (masa < 0) {
+                if (masa < 0f) {
                     Toast.makeText(this@MainActivity,getString(R.string.error_negative_mass),Toast.LENGTH_LONG).show()
                     return false
                 }
@@ -239,7 +238,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             else -> {
-                 res = (-1.0).toFloat()
+                 res = -1.0f
             }
         }
         return res

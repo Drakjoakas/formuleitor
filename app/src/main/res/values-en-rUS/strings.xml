@@ -3,7 +3,7 @@
     <string name="app_name">Formuleitor</string>
     <string name="app_start">Formuleitor 1.0</string>
     <string name="app_start_subtitle">by Drakjoakas (Joaquin Sandoval)</string>
-    <string name="instrucciones">Select a formula and fill he requested values</string>
+    <string name="instrucciones">Select a formula and fill the requested values</string>
     <string name="boton">Calculate</string>
     <string name="image_content_description">Mathematic Formula</string>
     <string name="logo_content_description">Logo Formuleitor</string>
@@ -22,4 +22,9 @@
     <string name="result_velocity_msg">The velocity is</string>
     <string name="result_force_msg">The force is</string>
     <string name="result_acceleration_msg">The acceleration is</string>
+    <string-array name="formulas">
+        <item>Lineal Velocity</item>
+        <item>Acceleration</item>
+        <item>Force</item>
+    </string-array>
 </resources>
