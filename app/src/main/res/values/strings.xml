@@ -17,6 +17,7 @@
     <string name="boton">Calcular</string>
 
     <string name="image_content_description">Formula matemática</string>
+    <string name="logo_content_description">Logo Formuleitor</string>
 
     <!-- HINTS FORMULARIO -->
     <string name="hint_distancia">Distancia en Metros [m]</string>
@@ -35,17 +36,17 @@
 
     <!-- PANTALLA RESULTADOS -->
     <string name="hint_result_msg">El resultado es</string>
-    <string name="hint_result_res">42</string>
-    <string name="hint_result_units">[m]</string>
+    <string name="hint_result_res" translatable="false">42</string>
+    <string name="hint_result_units" translatable="false">[m]</string>
 
     <string name="result_velocity_msg">La velocidad es de </string>
-    <string name="result_velocity_units">[m/s]</string>
+    <string name="result_velocity_units" translatable="false">[m/s]</string>
 
     <string name="result_acceleration_msg">La aceleración es de </string>
-    <string name="result_acceleration_units">[m/s^2]</string>
+    <string name="result_acceleration_units" translatable="false">[m/s^2]</string>
 
     <string name="result_force_msg">La fuerza es de </string>
-    <string name="result_force_units">[N]</string>
+    <string name="result_force_units" translatable="false">[N]</string>
 
 
 </resources>

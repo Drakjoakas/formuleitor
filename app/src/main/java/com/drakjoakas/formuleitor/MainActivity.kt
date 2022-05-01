@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                 R.drawable.velocidad
             }
             1 -> {
-                R.drawable.aceleracion
+                R.drawable.aceleracion_simple
             }
             2 -> {
                 R.drawable.fuerza
