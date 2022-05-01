@@ -14,12 +14,38 @@
         <item>Fuerza</item>
     </string-array>
 
+    <string name="boton">Calcular</string>
+
+    <string name="image_content_description">Formula matemática</string>
+
     <!-- HINTS FORMULARIO -->
     <string name="hint_distancia">Distancia en Metros [m]</string>
     <string name="hint_tiempo">Tiempo en segundos [s]</string>
     <string name="hint_masa">Masa en Kilogramos [kg]</string>
-    <string name="hint_velocidad">Velocidad en Metros/Segundo [m/s] </string>
-    <string name="hint_aceleracion">Aceleración en Metros/Segundos^2 [m/s^2]</string>
+    <string name="hint_velocidad">Velocidad [m/s] </string>
+    <string name="hint_aceleracion">Aceleración [m/s^2]</string>
+
+    <!-- MENSAJES DE ERROR -->
+    <string name="error_empty">Favor de llenar todos los campos.</string>
+    <string name="error_numerator_cero">El numerador no puede ser cero</string>
+    <string name="error_negative_distance">La distancia no puede ser negativa</string>
+    <string name="error_negative_time">El tiempo no puede ser negativo</string>
+    <string name="error_negative_velocity">La velocidad no puede ser negativa</string>
+    <string name="error_negative_mass">La masa no puede ser negativa</string>
+
+    <!-- PANTALLA RESULTADOS -->
+    <string name="hint_result_msg">El resultado es</string>
+    <string name="hint_result_res">42</string>
+    <string name="hint_result_units">[m]</string>
+
+    <string name="result_velocity_msg">La velocidad es de </string>
+    <string name="result_velocity_units">[m/s]</string>
+
+    <string name="result_acceleration_msg">La aceleración es de </string>
+    <string name="result_acceleration_units">[m/s^2]</string>
+
+    <string name="result_force_msg">La fuerza es de </string>
+    <string name="result_force_units">[N]</string>
 
 
 </resources>
